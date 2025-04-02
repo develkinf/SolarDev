@@ -24,7 +24,7 @@ MENU, IP_ADDRESS = range(2)
 
 # Función para obtener datos desde la API de SolarWinds
 def get_solarwinds_data(query):
-    url = f"https://10.78.80.131:17774/SolarWinds/InformationService/v3/Json/Query?query={query}"
+    url = f"https://localhost:17774/SolarWinds/InformationService/v3/Json/Query?query={query}"
     headers = {'Content-Type': 'application/json'}
     try:
         response = requests.get(url, auth=(username, password), headers=headers, verify=False)
@@ -124,7 +124,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 # Función principal
 def main() -> None:
-    application = Application.builder().token("6810695007:AAFHlWEdV8M6_5OGEbHAtuJy2Gi_YXWrOPY").build()
+    application = Application.builder().token("YOURTOKEN").build()
     
     conv_handler = ConversationHandler(
         entry_points=[MessageHandler(filters.TEXT & ~filters.COMMAND, start)],
