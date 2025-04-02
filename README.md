@@ -18,9 +18,10 @@ Este bot de Telegram permite consultar información de nodos en SolarWinds, incl
 
 📦 Instalación
 * Clona el repositorio:
-** git clone https://github.com/tu-usuario/tu-repositorio.git
-** cd tu-repositorio
+  * git clone https://github.com/tu-usuario/tu-repositorio.git
+  * cd tu-repositorio 
+
 * Configura las variables de entorno:
-** export DASH_USERNAME="tu_usuario"
-** export DASH_PASSWORD="tu_contraseña"
-** export TELEGRAM_BOT_TOKEN="tu_token"
+  * export DASH_USERNAME="tu_usuario"
+  * export DASH_PASSWORD="tu_contraseña"
+  * export TELEGRAM_BOT_TOKEN="tu_token"
